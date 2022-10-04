@@ -21,7 +21,7 @@ libraryDependencies ++= List(
 )
 
 resolvers ++= Seq(
-  "lila-maven" at "https://raw.githubusercontent.com/ornicar/lila-maven/master"
+  "lila-maven" at "https://raw.githubusercontent.com/worldsims/lila-maven/develop"
 )
 
 scalacOptions ++= Seq(
