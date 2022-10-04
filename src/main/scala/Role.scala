@@ -53,10 +53,18 @@ case object Bishop extends PromotableRole {
 case object Knight extends PromotableRole {
   val forsyth = 'n'
   val dirs: Directions = List(
+    p => Pos.at(p.file.index - 1, p.rank.index + 3),
+    p => Pos.at(p.file.index - 1, p.rank.index - 3),
+    p => Pos.at(p.file.index + 1, p.rank.index + 3),
+    p => Pos.at(p.file.index + 1, p.rank.index - 3),
     p => Pos.at(p.file.index - 1, p.rank.index + 2),
     p => Pos.at(p.file.index - 1, p.rank.index - 2),
     p => Pos.at(p.file.index + 1, p.rank.index + 2),
     p => Pos.at(p.file.index + 1, p.rank.index - 2),
+    p => Pos.at(p.file.index - 3, p.rank.index + 1),
+    p => Pos.at(p.file.index - 3, p.rank.index - 1),
+    p => Pos.at(p.file.index + 3, p.rank.index + 1),
+    p => Pos.at(p.file.index + 3, p.rank.index - 1)
     p => Pos.at(p.file.index - 2, p.rank.index + 1),
     p => Pos.at(p.file.index - 2, p.rank.index - 1),
     p => Pos.at(p.file.index + 2, p.rank.index + 1),
